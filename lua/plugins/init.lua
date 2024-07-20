@@ -10,4 +10,5 @@ return {
         build = function() vim.fn["mkdp#util#install"]() end,
     },
     { "nvim-lualine/lualine.nvim", event = "VeryLazy", config = true },
+    { "turbio/bracey.vim", event = "VeryLazy" },
 }
