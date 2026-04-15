@@ -42,8 +42,7 @@ return {
         telescope.load_extension("ui-select")
 
         -- set keymaps
-        local keymap = vim
-            .keymap                                                                                                    -- for conciseness
+        local keymap = vim.keymap                                                                                                    -- for conciseness
         keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })           -- find files within current working directory, respects .gitignore
         keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })                 -- find string in current working directory as you type
         keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "Find string under cursor in cwd" })  -- find string under cursor in current working directory

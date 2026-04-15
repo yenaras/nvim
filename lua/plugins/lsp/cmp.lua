@@ -4,7 +4,7 @@ return {
     dependencies = {
         "hrsh7th/cmp-nvim-lsp",
         "onsails/lspkind.nvim",
-        "L3MON4D3/LuaSnip",             -- snippet engine
+        "L3MON4D3/LuaSnip", build = "make install_jsregexp",             -- snippet engine
         "rafamadriz/friendly-snippets", -- useful snippets
         "windwp/nvim-autopairs",
         { "tzachar/cmp-tabnine", build = "./install.sh", dependencies = "hrsh7th/nvim-cmp" },
